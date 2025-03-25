@@ -1,5 +1,5 @@
 # leetcode135Candy
-"""
+
 This is the solution for Leetcode Excercise #135. Candy.
 
 The premise is at follows:
@@ -24,4 +24,4 @@ The logic for the calculations is the following:
 - We hit a maximum (both previous and next rating are lower), that means we are starting to descend, and we will start a count of the children going down, and the current kid will have one more candy than the previous one.
 - We hit are going down, we add a counter we started when we hit the maximum, and the current kid will have one less candy than the previous one.
 - We hit a minimum (both previous and next rating are higher). We know this value should be 1, as is the minimum amount we can give a kid. So we will compare our current candy value to 1, and adjust backwards accordingly, starting on the previous Maximum when we started going down (Basically, we will add or subtract candies here by multyplying the going down counter we had by ehr difference of the current candy and 1, number that can be negative)
-"""
+
