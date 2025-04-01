@@ -4,7 +4,7 @@ This repository contains my solutions to various **LeetCode** problems, categori
 Each solution includes explanations, optimized approaches, and test cases.  
 
 ## 📖 Table of Contents
-- [🔥 Arrays](arrays/)
+- [🔥 Arrays](Arrays/)
 - [🔗 Linked Lists](linked_lists/)
 - [🔁 Dynamic Programming](dynamic_programming/)
 - [🧮 Math](math/)
