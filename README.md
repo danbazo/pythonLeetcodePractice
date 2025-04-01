@@ -55,17 +55,11 @@ if __name__ == "__main__":
 
 |	Problem	|Category	|Difficulty	|Solution|
 |-----------|-----------|-----------|--------|
-1	Two Sum	Arrays	🟢 Easy	two_sum.py
-2	Add Two Numbers	Linked Lists	🔵 Medium	add_two_numbers.py
-3	Longest Substring Without Repeating Characters	Strings	🔴 Hard	longest_substring.py
-🚀 Future Plans
-✅ Add more optimized solutions.
-✅ Include multiple approaches (brute force, optimized).
-✅ Add Jupyter Notebooks with visual explanations.
-📩 Contact & Contributions
-If you have suggestions, feel free to open an issue or submit a PR.
-Let's connect on LinkedIn.
-⭐ If you found this repo useful, consider giving it a star! ⭐
+|1	|Two Sum	|Arrays	|🟢 Easy	|two_sum.py|
+|2 |Add Two Numbers	|Linked Lists	|🔵 Medium	|add_two_numbers.py|
+|3	|Longest Substring Without Repeating Characters	|Strings	|🔴 Hard	|longest_substring.py|
+
+
 
 
 
