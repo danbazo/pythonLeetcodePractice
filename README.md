@@ -23,6 +23,7 @@ Each solution includes explanations, optimized approaches, and test cases.
 
 
 cd arrays
+
 3 Run a Python script:
 
 bash
