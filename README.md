@@ -1,27 +1,71 @@
-# leetcode135Candy
+#  LeetCode Python Practice Solutions
 
-This is the solution for Leetcode Excercise #135. Candy.
+This repository contains my solutions to various **LeetCode** problems, categorized by topic.  
+Each solution includes explanations, optimized approaches, and test cases.  
 
-The premise is at follows:
-  There are n children standing in a line. Each child is assigned a rating value given in the integer array ratings.
-  
-  You are giving candies to these children subjected to the following requirements:
-  
+## 📖 Table of Contents
+- [🔥 Arrays](arrays/)
+- [🔗 Linked Lists](linked_lists/)
+- [🔁 Dynamic Programming](dynamic_programming/)
+- [🧮 Math](math/)
+- [🧩 Recursion & Backtracking](recursion/)
+- [📊 Sorting & Searching](sorting_searching/)
+- [🔑 Hashing](hashing/)
+- [📡 Graphs & Trees](graphs_trees/)
 
--   Each child must have at least one candy.
--   Children with a higher rating get more candies than their neighbors.
--   Return the minimum number of candies you need to have to distribute the candies to the children.
+---
 
-This is a Linear solution, with a test runtime of 8ms, that beats 94.42% of accepted solutions on leetcode for that problem.
+## ✅ How to Use This Repository
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/danbazo/pythonLeetcodePractice
+Navigate to the desired category:
 
-In this approach, I priotized an algorith with O(n) complexity, focusing on a for loop and a single run.
-The logic for the calculations is the following:
 
-- When we evaluate the current rating of a children, we compare it the the previous and following one to determine our actions.
-- If the following rating is equal to our current one, we consider a "reset" of our initial variables,  the rest of the list can be treated as a new one, as the requierements of the problem dont consider equality, and so, consequtive children with the same rating dont have a rule that determine the relation between each other candies.
-- Besides that, we have 4 cases:
-- We are going up (previous rating is lower, next one is higher), and so the current kid will have one more candy than the previous one
-- We hit a maximum (both previous and next rating are lower), that means we are starting to descend, and we will start a count of the children going down, and the current kid will have one more candy than the previous one.
-- We hit are going down, we add a counter we started when we hit the maximum, and the current kid will have one less candy than the previous one.
-- We hit a minimum (both previous and next rating are higher). We know this value should be 1, as is the minimum amount we can give a kid. So we will compare our current candy value to 1, and adjust backwards accordingly, starting on the previous Maximum when we started going down (Basically, we will add or subtract candies here by multyplying the going down counter we had by ehr difference of the current candy and 1, number that can be negative)
+cd arrays
+Run a Python script:
+bash
+
+python two_sum.py
+📌 Example Problem: Two Sum (LeetCode #1)
+Problem: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+🔹 Approach: Hash Map for O(n) time complexity.
+🔹 Solution Code: two_sum.py
+
+
+
+def two_sum(nums, target):
+    num_map = {}
+    for i, num in enumerate(nums):
+        complement = target - num
+        if complement in num_map:
+            return [num_map[complement], i]
+        num_map[num] = i
+    return []
+
+# Example usage:
+if __name__ == "__main__":
+    nums = [2, 7, 11, 15]
+    target = 9
+    print(two_sum(nums, target))  # Output: [0, 1]
+
+
+🔥 Progress Tracker
+#	Problem	Category	Difficulty	Solution
+1	Two Sum	Arrays	🟢 Easy	two_sum.py
+2	Add Two Numbers	Linked Lists	🔵 Medium	add_two_numbers.py
+3	Longest Substring Without Repeating Characters	Strings	🔴 Hard	longest_substring.py
+🚀 Future Plans
+✅ Add more optimized solutions.
+✅ Include multiple approaches (brute force, optimized).
+✅ Add Jupyter Notebooks with visual explanations.
+📩 Contact & Contributions
+If you have suggestions, feel free to open an issue or submit a PR.
+Let's connect on LinkedIn.
+⭐ If you found this repo useful, consider giving it a star! ⭐
+
+
+
+
 
