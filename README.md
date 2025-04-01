@@ -53,10 +53,10 @@ if __name__ == "__main__":
 
 # 🔥 Progress Tracker
 
-|# |	Problem	|Category	|Difficulty	|Solution|
-|-----------|-----------|-----------|--------|-------|
-|135	|Candy	|Arrays	|🔴 Hard	|[135Candy.py](Arrays/135Candy.py)|
-|42 |Trapping Rain Water	|Arrays	|🔴 Hard	|Arrays/42TrappingRainWater.py|
+|# |	Problem	|Category	|Difficulty	|Explaination|Solution|
+|-----------|-----------|-----------|--------|-------|------|
+|135	|Candy	|Arrays	|🔴 Hard	|[135Candy.md](Arrays/135Candy.md)|[135Candy.py](Arrays/135Candy.py)|
+|42 |Trapping Rain Water	|Arrays	|🔴 Hard	|[42TrappingRainWater.md](Arrays/42TrappingRainWater.md)|[42TrappingRainWater.py](Arrays/42TrappingRainWater.py)|
 
 
 
