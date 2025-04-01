@@ -6,6 +6,7 @@ Given n non-negative integers representing an elevation map where the width of e
  
 
 Example 1:
+
 ![image](https://github.com/user-attachments/assets/a7496f45-5457-435e-8a0a-4d3ab85bbbd6)
 
 
