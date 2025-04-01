@@ -19,11 +19,11 @@ Each solution includes explanations, optimized approaches, and test cases.
 1. Clone the repository:  
    ```bash
    git clone https://github.com/danbazo/pythonLeetcodePractice
-Navigate to the desired category:
+2. Navigate to the desired category:
 
 
 cd arrays
-Run a Python script:
+3 Run a Python script:
 
 bash
 
