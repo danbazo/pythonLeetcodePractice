@@ -55,8 +55,8 @@ if __name__ == "__main__":
 
 |# |	Problem	|Category	|Difficulty	|Solution|
 |-----------|-----------|-----------|--------|-------|
-|135	|Candy	|Arrays	|🔴 Hard	|135Candy.py|
-|42 |Trapping Rain Water	|Arrays	|🔴 Hard	|42TrappingRainWater.py|
+|135	|Candy	|Arrays	|🔴 Hard	|Arrays/135Candy.py|
+|42 |Trapping Rain Water	|Arrays	|🔴 Hard	|Arrays/42TrappingRainWater.py|
 
 
 
