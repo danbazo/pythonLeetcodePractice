@@ -34,9 +34,7 @@ Problem: Given an array of integers nums and an integer target, return indices o
 
 🔹 Approach: Hash Map for O(n) time complexity.
 🔹 Solution Code: two_sum.py
-
-
-
+``` python
 def two_sum(nums, target):
     num_map = {}
     for i, num in enumerate(nums):
@@ -51,7 +49,7 @@ if __name__ == "__main__":
     nums = [2, 7, 11, 15]
     target = 9
     print(two_sum(nums, target))  # Output: [0, 1]
-
+```
 
 # 🔥 Progress Tracker
 
