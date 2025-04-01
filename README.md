@@ -52,7 +52,9 @@ if __name__ == "__main__":
 
 
 # 🔥 Progress Tracker
-#	Problem	Category	Difficulty	Solution
+
+|	Problem	|Category	|Difficulty	|Solution|
+|-----------|-----------|-----------|--------|
 1	Two Sum	Arrays	🟢 Easy	two_sum.py
 2	Add Two Numbers	Linked Lists	🔵 Medium	add_two_numbers.py
 3	Longest Substring Without Repeating Characters	Strings	🔴 Hard	longest_substring.py
