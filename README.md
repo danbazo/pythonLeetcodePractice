@@ -28,7 +28,8 @@ Run a Python script:
 bash
 
 python two_sum.py
-📌 Example Problem: Two Sum (LeetCode #1)
+
+# 📌 Example Problem: Two Sum (LeetCode #1)
 Problem: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
 🔹 Approach: Hash Map for O(n) time complexity.
