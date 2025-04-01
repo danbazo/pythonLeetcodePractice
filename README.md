@@ -55,8 +55,11 @@ if __name__ == "__main__":
 
 |# |	Problem	|Category	|Difficulty	|Explaination|Solution|
 |-----------|-----------|-----------|--------|-------|------|
-|135	|Candy	|Arrays	|🔴 Hard	|[135Candy.md](Arrays/135Candy.md)|[135Candy.py](Arrays/135Candy.py)|
+|12 |Integer to Roman	|Arrays	|🔵 Medium	|[012IntegerToRoman.md](Arrays/012IntegerToRoman.md)|[012IntegerToRoman.py](Arrays/012IntegerToRoman.py)|
+|13 |Roman to Integer	|Arrays	|🟢 Easy	|[013RomanToInteger.md](Arrays/013RomanToInteger.md)|[013RomanToInteger.py](Arrays/013RomanToInteger.py)|
 |42 |Trapping Rain Water	|Arrays	|🔴 Hard	|[42TrappingRainWater.md](Arrays/42TrappingRainWater.md)|[42TrappingRainWater.py](Arrays/42TrappingRainWater.py)|
+|135	|Candy	|Arrays	|🔴 Hard	|[135Candy.md](Arrays/135Candy.md)|[135Candy.py](Arrays/135Candy.py)|
+
 
 
 
