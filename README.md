@@ -24,6 +24,7 @@ Navigate to the desired category:
 
 cd arrays
 Run a Python script:
+
 bash
 
 python two_sum.py
