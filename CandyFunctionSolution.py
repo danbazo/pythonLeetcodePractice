@@ -1,4 +1,4 @@
-def candy(ratings: List[int])
+def candy(ratings):
         """We initialize our variables
         candyCount will be our return variable, we will increase it on our iterations
         preRating will be the previous rating for our logic, and we start with negative one, so every children will have more than this.
