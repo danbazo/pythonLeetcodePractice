@@ -51,7 +51,7 @@ if __name__ == "__main__":
     print(two_sum(nums, target))  # Output: [0, 1]
 
 
-🔥 Progress Tracker
+# 🔥 Progress Tracker
 #	Problem	Category	Difficulty	Solution
 1	Two Sum	Arrays	🟢 Easy	two_sum.py
 2	Add Two Numbers	Linked Lists	🔵 Medium	add_two_numbers.py
