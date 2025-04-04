@@ -1,15 +1,18 @@
 def twoSum(numbers, target):
-        if target<numbers[-1]:
-            for i in range(len(numbers)-1):
-                for j in range(i+1,len(numbers)):
-                    if numbers[i]+numbers[j]==target:
-                        return [i+1,j+1]
-                    elif numbers[i]+numbers[j]>target:
-                        break
-        else:
-            for i in range(len(numbers)-1,0,-1):
-                for j in range(i-1,-1,-1):
-                    if numbers[i]+numbers[j]==target:
-                        return [j+1,i+1]
-                    elif numbers[i]+numbers[j]<target:
-                        break
+        """
+        Returns a list with the 1 indexed positions of the two values inside numbers that sum the target value
+
+        Keyword arguments:
+        numbers: a List of integers, sorted in increasing order
+        target: an integer
+
+        """
+        lower=0
+        upper=len(numbers)-1
+        while True:
+            if numbers[lower]+numbers[upper]<target:
+                lower+=1
+            elif numbers[lower]+numbers[upper]>target:
+                upper-=1
+            else:
+                return [lower+1,upper+1]
