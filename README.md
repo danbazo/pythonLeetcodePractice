@@ -4,14 +4,9 @@ This repository contains my solutions to various **LeetCode** problems, categori
 Each solution includes explanations, optimized approaches, and test cases.  
 
 ## 📖 Table of Contents
-- [🔥 Arrays](Arrays/)
-- [🔗 Linked Lists](linked_lists/)
-- [🔁 Dynamic Programming](dynamic_programming/)
-- [🧮 Math](math/)
-- [🧩 Recursion & Backtracking](recursion/)
-- [📊 Sorting & Searching](sorting_searching/)
-- [🔑 Hashing](hashing/)
-- [📡 Graphs & Trees](graphs_trees/)
+- [Arrays](Arrays/)
+- [Sliding Window](slidingWindow/)
+- [Two Pointers](twoPointers/)
 
 ---
 
