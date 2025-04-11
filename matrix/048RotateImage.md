@@ -10,6 +10,7 @@ You have to rotate the image in-place, which means you have to modify the input 
  
 
 Example 1:
+
 ![image](https://github.com/user-attachments/assets/681e4e89-1461-4894-96c5-85b141874ec1)
 
 
@@ -19,6 +20,7 @@ Output: [[7,4,1],[8,5,2],[9,6,3]]
 
 
 Example 2:
+
 ![image](https://github.com/user-attachments/assets/395fa647-6678-483d-aff7-e440da0b4aac)
 
 
