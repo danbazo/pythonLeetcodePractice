@@ -31,3 +31,8 @@ def summaryRanges(nums):
       ranges.append(str(start)+'->'+str(nums[-1]))
             
     return ranges
+
+
+if __name__ == "__main__":
+    print('Summary Ranges test: nums=[0,2,3,4,6,8,9]')
+    print('Returns:',summaryRanges([0,2,3,4,6,8,9]))
