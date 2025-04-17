@@ -41,3 +41,12 @@ Each range [a,b] in the list should be output as:
 All the values of nums are unique.
 
 nums is sorted in ascending order.
+
+## Solution:
+- Traverse the list while keeping track of the start of a range.
+- When a gap is found (i.e., current number + 1 != next number), add the range.
+- Handle both single-number ranges and start->end formats.
+- Finalize the last range outside the loop.
+
+## Time Complexity:
+- O(n), a single iteration over the list
