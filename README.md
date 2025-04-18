@@ -11,23 +11,9 @@ Each solution includes explanations, optimized approaches, and test cases.
 ---
 
 ## ✅ How to Use This Repository
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/danbazo/pythonLeetcodePractice
-   ```
-   
-2. Navigate to the desired category:
-
-   ``` bash
-   cd arrays
-   ```
-
-3. Run a Python script:
-
-   ```bash
-   
-   python two_sum.py
-   ```
+1. Click on the green Code button.
+2. Open the active CodeSpace
+3. Find the desired problem and run it
 
 # 📌 Example Problem: Two Sum (LeetCode #1)
 Problem: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
