@@ -30,6 +30,6 @@ def merge(intervals):
   return mergedInter
 
 
-__name__ == "__main__":
+if __name__ == "__main__":
   print('Merge Intervals test. intervals=[[1,3],[2,6],[8,10],[15,18]]')
-  print(merge('Returns: '[[1,3],[2,6],[8,10],[15,18]]))
+  print('Returns: ', merge([[1,3],[2,6],[8,10],[15,18]]))
