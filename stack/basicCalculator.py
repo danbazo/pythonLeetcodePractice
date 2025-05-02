@@ -1,59 +1,34 @@
 def calculate(s):
-        stack=[]
-        operation=[]
-        def suma(x,y):
-            return x+y
-        def subs(x,y):
-            return x-y
-        ops={'+':suma,
-        '-': subs}
-        opened=False
-        numStart=-1
-        numStarted=False
-        for i in range(len(s)):
-            if s[i].isdigit():
-                if numStarted==False:
-                    numStart=i
-                    numStarted=True   
-
-            else:
-                if numStarted:
-                    numStarted=False
-                    if opened or not operation:
-                        stack.append(int(s[numStart:i]))
-                        opened=False
-                    else:
-                       
-                        stack.append(operation.pop()(stack.pop(),int(s[numStart:i])))
-
-
-                if s[i]==' ':
-                    if numStarted:
-                        numStarted=False
-                        stack.append(int(s[numStart:i]))
+        ops={'+':lambda x,y:x+y,
+        '-': lambda x,y:x-y}
+        i=0
+        def helper(s,i):
+            total=0
+            num=0
+            operation='+'
+            
+            while i<len(s):
+                if s[i].isdigit():
+                    num=num*10+int(s[i])
                 
-                elif s[i]=='(':
-                    opened=True
-                elif s[i]==')':
-                    if len(stack)==1:
-                        continue
-                    second=stack.pop()
-                    first=stack.pop()
-                    stack.append(operation.pop()(first,second))
-                    
                 else:
-                    if opened or not stack:
-                        stack.append(0)
-                        opened=False
-
-                    
-                    operation.append(ops[s[i]])
-        if numStarted:
-
-            if opened or not operation:
-                stack.append(int(s[numStart:]))
-                opened=False
-            else:
-                stack.append(operation.pop()(stack.pop(),int(s[numStart:])))
-        
-        return stack[0]
+                    if num:
+                        total=ops[operation](total,num)
+                        num=0
+                    if s[i]==' ':
+                        pass
+                    elif s[i]=='(':
+                        toSum,iIncreased=helper(s,i+1)
+                        total=ops[operation](total,toSum)
+                        i=iIncreased
+                    elif s[i]==')':
+                        
+                        return total,i
+                    else:
+                        operation=s[i]
+                        
+                i+=1
+            if num:
+                total=ops[operation](total,num)
+            return total,i
+        return helper(s,i)[0]
