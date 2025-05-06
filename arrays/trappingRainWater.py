@@ -49,3 +49,7 @@ def trap(height):
                 if diff>0:
                     waterSum+=(diff)
         return waterSum
+#Example test
+if __name__ == "__main__":
+   print('Trapping Rain Water Test. height = [0,1,0,2,1,0,1,3,2,1,2,1]')
+   print('Returns: ', trap([0,1,0,2,1,0,1,3,2,1,2,1]))
