@@ -33,24 +33,11 @@ n == height.length
 0 <= height[i] <= 105
 
 ## Solution:
- Perform **three passes** over the elevation map:
-  1. **First pass:** Identify local maxima (peaks) where the height decreases after increasing. These are potential water boundaries.
-  2. **Second pass:** Refine the list of local maxima by removing those that are "overshadowed" by taller peaks—only keep the necessary ones to trap water effectively.
-  3. **Third pass:** For each pair of remaining peaks, calculate how much water can be trapped in between them by comparing the height of the bars to the smaller of the two peaks.
-
-- Use two auxiliary lists:
-  - `maxHeight`: stores the values of local maxima.
-  - `maxHeightIndex`: stores the corresponding indices of these maxima.
-
-- Water trapped between two peaks is calculated using the formula:  
-  `water += min(left_peak, right_peak) - height[i]`,  
-  for each `i` between the peaks.
+- Uses a two-pointer approach to traverse the elevation map from both ends.
+- Maintains two variables, left_max and right_max, to keep track of the maximum height seen so far from the left and right.
+- At each step, determines water trapped at the current position based on the minimum of the two maximums.
+- Efficiently calculates the trapped water in a single pass.
 ## Time Complexity:
-- **Worst case: O(n²)**  
-  - First pass: O(n) – scans the elevation list once.
-  - Second pass: Can be up to O(n²) due to nested deletions while refining the peak list.
-  - Third pass: O(n) – sums trapped water by iterating between peaks.
+- O(n)
 ## Space Complexity:
-- **O(n)**  
-  - Used to store local maxima and their indices (`maxHeight`, `maxHeightIndex`).
-  - No extra space required for the final result; water is accumulated incrementally.
+- O(1)
