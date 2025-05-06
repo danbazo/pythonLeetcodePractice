@@ -1,35 +1,41 @@
 def candy(ratings):
-        """We initialize our variables
-        candyCount will be our return variable, we will increase it on our iterations
-        preRating will be the previous rating for our logic, and we start with negative one, so every children will have more than this.
-        prevCandy will be the value to pass so we know how many candies the last child got.
-        descentCount will keep the count of how many children are in a descent order at a time, so we can adjust some calculations further down without doing more passings.
         """
-        candyCount=0
-        prevRating=-1
-        prevCandy=0
-        descentCount=0
+        returns an integer of the minimum number of candies to be distributed between children acording to the ratings list
+
+        Keyword arguments:
+        ratings a list of integers of a rating per each child
         """
-        We make a single run through the list with a for loop, evaluating all items minus the last one, that will be checked outside the loop, as it has no following item to compare to.
-        We will check if the previous item is less or greater than the current one (i will consider equality as being less than, as an equality basically breaks the list and we treat the subsequent elements as a new list, restarting the variables except the candyCount)
-        """
+
+        #Initilize variables to be used
+        
+        candyCount=0 # Total candies distributed
+        prevRating=-1 # Previous rating for comparison
+        prevCandy=0 # Candies given to the previous child
+        descentCount=0 # Counter for consecutive descending ratings
+        
+     # Iterate through all children except the last, which is handled separately
         for i in range(len(ratings)-1):
             if prevRating<ratings[i]:
+                # Ascending or start of peak
                 if ratings[i]>ratings[i+1]:
+                # Peak followed by a descent
                     prevCandy+=1
                     candyCount+=prevCandy
                     descentCount=1
                     prevRating=ratings[i]
                 elif ratings[i]<ratings[i+1]:
+                # Increasing trend
                     prevCandy+=1
                     candyCount+=prevCandy
                     prevRating=ratings[i]
                 else:
+                # Flat area after a climb
                     prevRating=-1
                     prevCandy+=1
                     candyCount+=prevCandy
                     prevCandy=0
             else:
+                # Descending or equal trend
                 if ratings[i]>ratings[i+1]:
                     descentCount+=1
                     prevCandy-=1
@@ -37,17 +43,21 @@ def candy(ratings):
                     prevRating=ratings[i]
 
                 elif ratings[i]<ratings[i+1]:
+                 # End of descent, start climbing again
                     descentCount+=1
                     prevCandy-=1
                     candyCount+=prevCandy
                     if prevCandy>1:
+                        # Adjust overcounting during descent
                         candyCount-=(descentCount-1)*(prevCandy-1)
                     elif prevCandy<1:
+                        # Adjust undercounting: ensure all children get at least 1
                         candyCount+=(descentCount)*(1-prevCandy)
                     descentCount=0
                     prevCandy=1
                     prevRating=ratings[i]
                 else:
+                    # Flat after descent
                     descentCount+=1
                     prevCandy-=1
                     candyCount+=prevCandy
@@ -58,9 +68,8 @@ def candy(ratings):
                     descentCount=0
                     prevCandy=0
                     prevRating=-1
-        """
-        After we are done, we evaluate the last item of the list, which was not checked in the loop.
-        """
+        
+        #Last item on the list is evaluated
         if prevRating<ratings[-1]: candyCount+=(prevCandy+1)
         else: 
             descentCount+=1
@@ -71,3 +80,8 @@ def candy(ratings):
             elif prevCandy<1:
                 candyCount+=(descentCount)*(1-prevCandy)
         return candyCount
+
+#Example test
+if __name__ == "__main__":
+   print('Candy test. ratings = [1,2,2]')
+   print('Returns: ', candy([1,2,2]))
