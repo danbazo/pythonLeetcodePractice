@@ -24,6 +24,7 @@ Each solution includes explanations, optimized approaches, and test cases.
 |12 |Integer to Roman	|Arrays	|🔵 Medium	|[012IntegerToRoman.md](Arrays/012IntegerToRoman.md)|[012IntegerToRoman.py](Arrays/012IntegerToRoman.py)|
 |13 |Roman to Integer	|Arrays	|🟢 Easy	|[013RomanToInteger.md](Arrays/013RomanToInteger.md)|[013RomanToInteger.py](Arrays/013RomanToInteger.py)|
 |42 |Trapping Rain Water	|Arrays	|🔴 Hard	|[trappingRainWater.md](arrays/trappingRainWater.md)|[trappingRainWater.py](arrays/trappingRainWater.py)|
+|68 |Text Justification	|Arrays	|🔴 Hard	|[textJustification.md](arrays/textJustification.md)|[textJustification.py](arrays/textJustification.py)|
 |135	|Candy	|Arrays	|🔴 Hard	|[candy.md](arrays/candy.md)|[candy.py](arrays/candy.py)|
 
 
