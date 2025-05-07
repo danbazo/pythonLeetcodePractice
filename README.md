@@ -4,7 +4,7 @@ This repository contains my solutions to various **LeetCode** problems, categori
 Each solution includes explanations, optimized approaches, and test cases.  
 
 ## 📖 Table of Contents
-- [Arrays](Arrays/)
+- [Arrays](arrays/)
 - [Sliding Window](slidingWindow/)
 - [Two Pointers](twoPointers/)
 
