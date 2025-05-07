@@ -21,7 +21,8 @@ Each solution includes explanations, optimized approaches, and test cases.
 
 |# |	Problem	|Category	|Difficulty	|Explaination|Solution|
 |-----------|-----------|-----------|--------|-------|------|
-|12 |Integer to Roman	|Arrays	|🔵 Medium	|[integerToRoman.md](arrays/integerToRoman.md)|[integerToRoman.py](4rrays/integerToRoman.py)|
+|11 |Container With Most Water	|Two Pointer	|🔵 Medium	|[maxArea.md](twoPointers/maxArea.md)|[maxArea.py](twoPointers/maxArea.py)|
+|12 |Integer to Roman	|Arrays	|🔵 Medium	|[integerToRoman.md](arrays/integerToRoman.md)|[integerToRoman.py](arrays/integerToRoman.py)|
 |13 |Roman to Integer	|Arrays	|🟢 Easy	|[romanToInteger.md](arrays/romanToInteger.md)|[romanToInteger.py](arrays/romanToInteger.py)|
 |42 |Trapping Rain Water	|Arrays	|🔴 Hard	|[trappingRainWater.md](arrays/trappingRainWater.md)|[trappingRainWater.py](arrays/trappingRainWater.py)|
 |68 |Text Justification	|Arrays	|🔴 Hard	|[textJustification.md](arrays/textJustification.md)|[textJustification.py](arrays/textJustification.py)|
