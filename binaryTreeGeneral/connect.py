@@ -1,25 +1,28 @@
-"""
+
 # Definition for a Node.
 class Node:
-    def __init__(self, val: int = 0, left: 'Node' = None, right: 'Node' = None, next: 'Node' = None):
+    def __init__(self, val = 0, left = None, right = None, next = None):
         self.val = val
         self.left = left
         self.right = right
         self.next = next
-"""
-
-def connect(self, root: 'Node') -> 'Node':
-  if not root: return root
-  currentLevel=[root]
-  while currentLevel:
-      nextLevel=[]
-      for index in range(len(currentLevel)):
-          node=currentLevel[index]
-          if node.left: nextLevel.append(node.left)
-          if node.right: nextLevel.append(node.right)
-          if index<len(currentLevel)-1:
-             node.next=currentLevel[index+1]
-      currentLevel=nextLevel
-  return root
 
 
+def connect(root):
+    if not root: return root
+    levelDummy=Node(None)
+    levelPointer=levelDummy
+    currentNode=root
+    while currentNode:
+        while currentNode:
+            if currentNode.left:
+                levelPointer.next=currentNode.left
+                levelPointer=levelPointer.next
+            if currentNode.right:
+                levelPointer.next=currentNode.right
+                levelPointer=levelPointer.next
+            currentNode=currentNode.next
+        currentNode=levelDummy.next
+        levelDummy=Node(None)
+        levelPointer=levelDummy
+    return root
