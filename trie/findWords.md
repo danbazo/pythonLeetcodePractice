@@ -13,11 +13,13 @@ Each word must be constructed from letters of sequentially adjacent cells, where
 
 Example 1:
 
+![search1](https://github.com/user-attachments/assets/b323e2b0-7c0a-4268-9d80-1e771c97b281)
 
 Input: board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], words = ["oath","pea","eat","rain"]
 Output: ["eat","oath"]
 Example 2:
 
+![search2](https://github.com/user-attachments/assets/423e3e9a-aa6a-4239-9e04-5e7f3de773db)
 
 Input: board = [["a","b"],["c","d"]], words = ["abcb"]
 Output: []
