@@ -1,4 +1,4 @@
-def snakesAndLadders(self, board: List[List[int]]) -> int:
+def snakesAndLadders(board):
         n=len(board)
         totalPoss=n**2
         current=[1]
